@@ -27,16 +27,16 @@ if (currentEnv !== 'production' && currentEnv !== 'staging') {  //dev
   exports.server.ip = '0.0.0.0';
 
   exports.db = {
-  URL: "mongodb://localhost:dev /", 
-  db_port: 9090
+  URL: "//localhost:dev /", 
+  db_port: 8080
 };
 }
-else {  //prod
+else {  														//prod
   exports.enableTests = true;
   exports.server.ip = '0.0.0.0';
 
   exports.db = {
-  URL: "mongodb://localhost:prod /", 
+  URL: "//localhost:prod /", 
   db_port: 9090
 };
 }
