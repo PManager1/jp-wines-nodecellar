@@ -1,9 +1,18 @@
 
 var mongo = require('mongodb');
 
+var db_url = require('../config/config').db.URL;
+var db_port = require('../config/config').db.db_port;
+
+
+
 var Server = mongo.Server,
     Db = mongo.Db,
     BSON = mongo.BSONPure;
+
+
+console.log('db_url==>', db_url);
+console.log('db_port==>', db_port);
 
 var server = new Server('172.16.229.142', 27017, {auto_reconnect: true});
 db = new Db('winedb', server, {safe: true});
