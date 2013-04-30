@@ -23,20 +23,14 @@ exports.server = {
 };
 
 if (currentEnv !== 'production' && currentEnv !== 'staging') {  //dev
-  exports.enableTests = true;
-  exports.server.ip = '0.0.0.0';
-
   exports.db = {
-  URL: "//localhost:dev /", 
-  db_port: 8080
+  URL: "172.16.229.142", 
+  db_port: 27017
 };
 }
 else {  														//prod
-  exports.enableTests = true;
-  exports.server.ip = '0.0.0.0';
-
   exports.db = {
-  URL: "//localhost:prod /", 
-  db_port: 9090
+  URL: "0.0.0.0", 
+  db_port: 27017
 };
 }

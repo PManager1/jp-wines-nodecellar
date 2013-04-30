@@ -14,7 +14,7 @@ var Server = mongo.Server,
 console.log('db_url==>', db_url);
 console.log('db_port==>', db_port);
 
-var server = new Server('172.16.229.142', 27017, {auto_reconnect: true});
+var server = new Server('db_url', db_port, {auto_reconnect: true});
 db = new Db('winedb', server, {safe: true});
 
 db.open(function(err, db) {
