@@ -22,13 +22,13 @@ exports.server = {
   ip: '127.0.0.1'
 };
 
-if (currentEnv !== 'production' && currentEnv !== 'staging') {  //dev
+if (currentEnv !== 'production' && currentEnv !== 'staging') {  /*Dev */
   exports.db = {
   URL: "172.16.229.142", 
   db_port: 27017
 };
 }
-else {  														//prod
+else {  			 /*prod */
   exports.db = {
   URL: "0.0.0.0", 
   db_port: 27017
