@@ -26,7 +26,7 @@ app.configure( 'development', function (){
 
 
 app.configure( 'production', function (){
-    app.set('port', process.env.PORT || 3500);
+    app.set('port', process.env.PORT || 80);
     app.use(express.logger('prod'));  /* 'default', 'short', 'tiny', 'dev' */
     app.use(express.bodyParser()),
     app.use(express.static(path.join(__dirname, 'public')));
