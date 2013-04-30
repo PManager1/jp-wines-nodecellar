@@ -3,14 +3,7 @@ var express = require('express'),
     path = require('path'),
     http = require('http'),
     wine = require('./routes/wines');
-    // db_url = require('./config/config').db.URL,
-    // db_port = require('./config/config').db.db_port,
-    // Env = require('./config/config').env;
 
-   
-    
-    // console.log( 'db_url (in App.js) ', db_url);
-    // console.log( 'db_port (in App.js)', db_port);
     
 
 var app = express();

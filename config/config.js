@@ -31,7 +31,7 @@ if (currentEnv !== 'production' && currentEnv !== 'staging') {  /*Dev */
 }
 else {  			 /*prod */
   exports.db = {
-  URL: "localhost", 
+  URL: "127.0.0.1", 
   db_port: 27017
 };
 }
